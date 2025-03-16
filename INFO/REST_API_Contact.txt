@@ -1,0 +1,69 @@
+
+REST API Contact
+----------------
+
+Postman для тесту REST API
+https://www.postman.com/
+
+Стартуємо додаток в IDE.
+
+(1) REST-запит на отримання даних
+
+GET
+http://localhost:8080/Spring-Boot-MySQL-Rest-0.0.1-SNAPSHOT/api/v1/contacts
+
+
+(2) REST-запит на створення даних
+
+POST
+http://localhost:8080/Spring-Boot-MySQL-Rest-0.0.1-SNAPSHOT/api/v1/contacts
+
+{
+	"name": "Alice",
+	"surname": "Clark",
+	"phone": "666-436-547"
+}
+
+
+{
+	"name": "John",
+	"surname": "Green",
+	"phone": "345-336-54"
+}
+
+{
+	"name": "Robert",
+	"surname": "Debian",
+	"phone": "777-342-645"
+}
+
+{
+	"name": "Lucy",
+	"surname": "Terra",
+	"phone": "+12-001-665-23-34"
+}
+
+
+(3) REST-запит на отримання даних за id
+
+GET
+http://localhost:8080/Spring-Boot-MySQL-Rest-0.0.1-SNAPSHOT/api/v1/contacts/2
+
+
+(4) REST-запит на оновлення даних за id
+
+PUT
+http://localhost:8080/Spring-Boot-MySQL-Rest-0.0.1-SNAPSHOT/api/v1/contacts/4
+
+{
+	"name": "Lucy",
+	"surname": "Moon",
+	"phone": "777-340-645"
+}
+
+
+(5) REST-запит на видалення даних за id
+
+DELETE
+http://localhost:8080/Spring-Boot-MySQL-Rest-0.0.1-SNAPSHOT/api/v1/contacts/3
+
